@@ -1,5 +1,6 @@
 {
   "/api/auth/[kindeAuth]/route": "app/api/auth/[kindeAuth]/route.js",
+  "/dashboard/create/page": "app/dashboard/create/page.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
