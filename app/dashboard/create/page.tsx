@@ -1,4 +1,5 @@
 import { handleSubmission } from "@/app/actions";
+import SubmitButton from "@/components/general/SubmitButton";
 import { Button } from "@/components/ui/button";
 import { Card,  CardContent,  CardDescription,  CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -30,7 +31,7 @@ export default function Create() {
                             <Input name="url"required type="url" placeholder="Image URL" />
                         </div>
 
-                        <Button>Create Post</Button>
+                        <SubmitButton />
                     </form>
                     
                 </CardContent>
