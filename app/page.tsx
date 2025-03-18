@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { prisma } from "./utils/db";
 import BlogPostCards from "@/components/general/BlogPostCards";
+import { Suspense } from "react";
 
 async function getData() {
   await new Promise((resolve) => setTimeout(resolve, 2000))//Fake Delay for showing loading
@@ -30,7 +31,9 @@ export default  function Home() {
     <div className="py-6">
       <h1 className="text-3xl font-bold tracking-tight mb-8">Latest posts</h1>
 
-    <BlogPost />
+    <Suspense fallback={<p>Loading...</p>}>
+      <BlogPost />
+    </Suspense>
     </div>
   );
 }
